@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>链接导航</title>
+    <style>
+        /* 基础样式重置 */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+        }
+
+        body {
+            background-color: #f9fafb;
+            min-height: 100vh;
+            color: #1f2937;
+            line-height: 1.5;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 640px; /* 适中的最大宽度，确保链接显示完整 */
+            margin: 0 auto;
+            padding: 3rem 1rem;
+        }
+
+        /* 标题样式 */
+        header {
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+
+        h1 {
+            font-size: clamp(2rem, 5vw, 3rem);
+            font-weight: 700;
+            color: #111827;
+            margin-bottom: 0.5rem;
+        }
+
+        header p {
+            color: #6b7280;
+            font-size: 1rem;
+        }
+
+        /* 链接容器 */
+        .links-container {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 1.5rem;
+        }
+
+        /* 链接卡片样式 */
+        .link-card {
+            display: block;
+            background-color: white;
+            border-radius: 0.5rem;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            padding: 1.5rem;
+            transition: all 0.3s ease;
+            text-decoration: none;
+        }
+
+        .link-card:hover {
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.15);
+            transform: translateY(-3px);
+        }
+
+        .link-content {
+            display: flex;
+            align-items: flex-start;
+        }
+
+        .icon {
+            color: #2563eb;
+            font-size: 1.5rem;
+            margin-right: 1rem;
+            margin-top: 0.25rem;
+        }
+
+        .link-info {
+            flex: 1;
+        }
+
+        .link-title {
+            font-size: 1.25rem;
+            font-weight: 600;
+            color: #1f2937;
+            margin-bottom: 0.5rem;
+        }
+
+        .link-url {
+            font-size: 0.875rem;
+            color: #2563eb;
+            word-break: break-all; /* 允许长链接换行 */
+        }
+
+        .link-url:hover {
+            color: #1d4ed8;
+        }
+
+        /* 页脚样式 */
+        footer {
+            margin-top: 4rem;
+            text-align: center;
+            color: #6b7280;
+            font-size: 0.875rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- 页面标题 -->
+        <header>
+            <h1>链接导航</h1>
+            <p>常用网站快速访问</p>
+        </header>
+        
+        <!-- 链接卡片容器 -->
+        <div class="links-container">
+            <!-- Team Leave Plan 链接 -->
+            <a href="https://confluence-wiki.pg.com.cn/display/GOL/Team+Leave+Plan" target="_blank" rel="noopener noreferrer" class="link-card">
+                <div class="link-content">
+                    <div class="icon">📅</div>
+                    <div class="link-info">
+                        <h2 class="link-title">Team Leave Plan</h2>
+                        <p class="link-url">https://confluence-wiki.pg.com.cn/display/GOL/Team+Leave+Plan</p>
+                    </div>
+                </div>
+            </a>
+            
+            <!-- Meeting Room 链接 -->
+            <a href="https://cloud.virsical.cn/vsk/app/user/login" target="_blank" rel="noopener noreferrer" class="link-card">
+                <div class="link-content">
+                    <div class="icon">🏢</div>
+                    <div class="link-info">
+                        <h2 class="link-title">Meeting Room</h2>
+                        <p class="link-url">https://cloud.virsical.cn/vsk/app/user/login</p>
+                    </div>
+                </div>
+            </a>
+        </div>
+        
+        <!-- 页脚 -->
+        <footer>
+            <p>最后更新: 2025年11月</p>
+        </footer>
+    </div>
+</body>
+</html>
